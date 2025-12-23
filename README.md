@@ -8,6 +8,8 @@ A large language model (LLM) is a neural network that can understand and generat
 the number of parameters (millions to billions), and
 the huge amount of text data used for training.
 
+The basic unit of a language model is token. A token can be a character, a word, or a part of a word (like -tion), depending on the model.
+
 **Transformer Architecture (Basics)**
 
 * The original transformer has two parts:
