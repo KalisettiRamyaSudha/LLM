@@ -7,8 +7,25 @@ A large language model (LLM) is a neural network that can understand and generat
 “Large” refers to both:
 the number of parameters (millions to billions), and
 the huge amount of text data used for training.
-
 The basic unit of a language model is token. A token can be a character, a word, or a part of a word (like -tion), depending on the model.
+
+There are two main types of language models: masked language models and autoregressive language models. 
+
+**Masked language model**
+A masked language model is trained to predict missing tokens anywhere in a sequence, using the context from both before and after the missing tokens. Used for non generative tasks such as sentiment analysis, text classification and code debugging.
+
+**Autoregressive language model**
+An autoregressive language model is trained to predict the next token in a sequence, using only the preceding tokens. (Example : ChatGPT)
+
+Why do larger models need more data? 
+Larger models have more capacity to learn, and, therefore, would need more training data to maximize their performance. You can train a large model on a small dataset too, but it’d be a waste of compute. You could have achieved similar or better results on this dataset with smaller models.
+
+**Foundation Models:**
+
+A foundation model is a large AI model, often a deep neural network, trained on massive, diverse datasets (like text, images). They Mark the transition from task-specific models to general-purpose models, to learn general patterns, making it adaptable for a wide range of specific tasks (like writing, coding, or translation) with minimal extra training, unlike traditional models built for single purposes. 
+The word foundation signifies both the importance of these models in AI applications and the fact that they can be built upon for different needs.
+
+**AI engineering ** refers to the process of building applications on top of foundation models. 
 
 **Transformer Architecture (Basics)**
 
@@ -23,7 +40,7 @@ The basic unit of a language model is token. A token can be a character, a word,
 
 **BERT (Bidirectional Encoder Representations from Transformers)**
 
-BERT uses only the encoder part of the transformer.
+BERT uses only the encoder part of the transformer. An Example of Masked language model
 It is trained differently from GPT:
   * BERT: predicts missing (masked) words → good for understanding tasks like classification, QA, sentiment analysis.
   * GPT: predicts the next word → good for generating text.
