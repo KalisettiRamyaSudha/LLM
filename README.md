@@ -60,6 +60,14 @@ Large-scale training on diverse data allows GPT to perform tasks it wasn’t dir
 
 <img width="616" height="292" alt="{9A2DC8CC-B6D5-4931-BA1B-E2B93BEAA1C0}" src="https://github.com/user-attachments/assets/7dc45c80-9e9f-4d31-b3e5-ddcf238ed305" />
 
+**How To Prepare Data for Training LLM?**
+
+The first task is to split text into individual tokens. As LLM cant process raw text we need to convert into continuous valued vectors.
+Converting data into vector is known as **Embedding**. We can use embedding models to vectorize the data though diffrent data formats required different embedding models.
+
+Embedding is mapping of objects to continuous points in vector space.
+
+
 
    
  
